@@ -1,25 +1,24 @@
 <nav class="navbar navbar-expand-md navbar-dark flex-column flex-md-row bg-dark">
-  <%= link_to "Home", root_path, class: 'navbar-brand' %>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+
+  <%= link_to root_path do %>
+  <%= image_tag "Logo.png", class: "navbar-brand" %>
+  <% end %>
 
   <div class="collapse navbar-collapse" id="mainNavbar">
     <ul class="navbar-nav ml-auto">
-      <% if user_signed_in? %>
-        <% if current_user.admin? %>
-          <li class="nav-item">
-            <%= link_to "Admin", admin_root_path, class: 'navbar-link' %>
-          </li>
-        <% end %>
-        <li class="nav-item mx-3">
-          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: 'navbar-link' %>
+        <li class="nav-item mx-4">
+          <%= link_to "Funds", funds_path%>
         </li>
-      <% else %>
-        <li class="nav-item mx-3">
-          <%= link_to "Log in", new_user_session_path, class: 'navbar-link' %>
+        <li class="nav-item mx-4">
+          <%= link_to "News", news_path%>
         </li>
-      <% end %>
+        <li class="nav-item mx-4">
+          <%= link_to "Contact", contact_path%>
+        </li>
+        <li class="nav-item mx-4">
+          <%= link_to "FAQs", faqs_path%>
+        </li>
     </ul>
   </div>
+
 </nav>

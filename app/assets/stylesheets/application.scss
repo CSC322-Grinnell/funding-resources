@@ -21,3 +21,48 @@ $primary: #D81E05;
  *= require_tree .
  *= require_self
 */
+
+@import url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
+
+.navbar {
+  background-color: black !important;
+  vertical-align: middle;
+}
+
+.navbar-brand {
+  width:150px;
+}
+
+div#mainNavbar ul li a{
+  color: white !important;
+  font-size: 18px !important;
+  font-family: lato;
+  text-decoration: none;
+}
+
+div#mainNavbar ul li a:hover{
+  text-decoration: underline;
+}
+
+h1, h2, h3, li {
+  color: white !important;
+}
+
+body{
+  background-color: black;
+}
+
+.container .jumbotron {
+  background-color: transparent;
+}
+.container .jumbotron a {
+  color: white;
+  font-size: 128px;
+  text-decoration: none;
+}
+
+.container .jumbotron a:hover {
+  color: white;
+  font-size: 128px;
+  text-decoration: underline;
+}

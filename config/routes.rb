@@ -3,4 +3,10 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get'/contact', to:'pages#contact', as:'contact'
+  get'/faqs', to:'pages#faqs', as:'faqs'
+  get '/news', to:'pages#news', as:'news'
+  get '/funds', to:'pages#funds', as:'funds'
+  get '/browse', to:'pages#browse', as:'browse'
 end
