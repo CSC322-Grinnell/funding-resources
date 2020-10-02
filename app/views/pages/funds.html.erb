@@ -1,1 +1,11 @@
-<h1> Hello Funds</h1>
+<link rel="stylesheet" type="text/css" href="funds.css">
+<h3><%= link_to "Add Resource", new_path %></h3>
+
+
+<% @resources.each do |resource| %>
+<div class="container">
+
+    <h1><%= link_to resource.title, resource_path(resource)%></h1>
+
+</div>
+<% end %>

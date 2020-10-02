@@ -1,0 +1,11 @@
+<div class="container">
+
+    <h1><%= @resource.title%></h1>
+    <h3><%= @resource.amount%></h3>
+    <h3><%= @resource.source%></h3>
+    <h3><%= @resource.cp%></h3>
+    <h3><%= @resource.description%></h3>
+    <%= link_to "Edit", edit_resource_path(@resource) %>
+    <%= button_to "Delete", resource_path(@resource), method: :delete, data: {confirm: "Are you sure?"}%>
+  
+</div>

@@ -44,7 +44,7 @@ div#mainNavbar ul li a:hover{
   text-decoration: underline;
 }
 
-h1, h2, h3, li {
+h1, h2, h3, li, p {
   color: white !important;
 }
 
@@ -65,4 +65,10 @@ body{
   color: white;
   font-size: 128px;
   text-decoration: underline;
+}
+
+.fund-container{
+  position: absolute;
+  width: 100vw;
+  top: 20%;
 }
