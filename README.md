@@ -1,6 +1,6 @@
 # README #
 
-Welcome to your new Rails project!
+Welcome to your new Rails project! test
 
 ## Getting started ##
 
