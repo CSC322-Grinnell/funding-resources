@@ -45,7 +45,7 @@ div#mainNavbar ul li a:hover{
 }
 
 h1, h2, h3, li {
-  color: white !important;
+  color: white;
 }
 
 body{
@@ -56,6 +56,8 @@ body{
   background-color: transparent;
 }
 .container .jumbotron a {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
   color: white;
   font-size: 128px;
   text-decoration: none;
@@ -64,5 +66,98 @@ body{
 .container .jumbotron a:hover {
   color: white;
   font-size: 128px;
-  text-decoration: underline;
+}
+
+div-small{
+  padding: 64px;
+  display: block
+}
+
+span {
+  padding: 128px;
+}
+
+.btn1 {
+  background-color: red;
+  color: white;
+  padding: 32px 64px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.card-body {
+  padding: 32px;
+  border-style: inset;
+  border-width: 2px;
+  border-color: red;
+}
+
+.card-title {
+  font-size: 24px;
+  text-align: center;
+  background-color: white
+}
+
+.card-text {
+  font-size: 16px;
+  padding-left: 256;
+  background-color: white;
+}
+
+
+.btn {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  float: right;
+}
+
+.btn a:hover {
+    text-decoration: underline;
+}
+
+html,
+#intro {
+    height: 100%;
+}
+
+h1-main {
+  font-size: 26;
+  color: black;
+}
+
+main {
+  background-color: white;
+}
+
+
+#intro {
+    background: url("https://www.grinnell.edu/sites/default/files/styles/landing_page_hero/public/images/2019-03/Header%20Image-6.jpg?h=aecdb15b&itok=bbKetzU4")no-repeat center center fixed;
+    background-blend-mode: opacity;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+#funds {
+  height: 100%;
+}
+
+#funds {
+  background-size: cover;
+  background-color: white;
+  color: black;
+}
+
+
+
+.container1 .jumbotron1 {
+  background-color: white;
 }
