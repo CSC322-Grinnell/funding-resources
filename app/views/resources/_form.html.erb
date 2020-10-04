@@ -1,0 +1,8 @@
+<%= simple_form_for @resource do |f|%>
+  <h3><%= f.input :title, label: "Resource Title" %></h3>
+  <h3><%= f.input :description, label: "Description"%></h3>
+  <h3><%= f.input :source, label: "Source" %></h3>
+  <h3><%= f.input :cp, label: "Contact Person"%></h3>
+  <h3><%= f.input :amount, label: "Amount" %></h3>
+  <%= f.button :submit %>
+<% end %>

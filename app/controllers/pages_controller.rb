@@ -12,6 +12,7 @@ class PagesController < ApplicationController
   end
 
   def funds
+    @resources = Resource.all.order("created_at DESC")
   end
 
   def browse
