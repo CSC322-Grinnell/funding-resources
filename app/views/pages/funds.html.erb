@@ -1,8 +1,25 @@
 <link rel="stylesheet" type="text/css" href="funds.css">
-<% @resources.each do |resource| %>
-<div class="container">
 
-    <h1><%= link_to resource.title, resource_path(resource)%></h1>
+  <body>
 
-</div>
-<% end %>
+  <div class="panel-group" id="accordion">
+    <% @resources.each_with_index do |resource, index| %>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a id="heading<%= index+1 %>" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= index+1 %>" >
+              <%= resource.title %>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse<%= index+1 %>" data-parent="#heading<%= index+1 %>" class="panel-collapse collapse">
+          <div class="panel-body">
+            <%= resource.description %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+
+  </body>

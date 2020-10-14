@@ -12,6 +12,8 @@ gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
+gem 'jquery-rails'
+gem 'popper_js', '~> 1.9', '>= 1.9.9'
 
 gem 'bootsnap', '>= 1.4.2', require: false
 
