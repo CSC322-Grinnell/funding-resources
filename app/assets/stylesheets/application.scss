@@ -24,6 +24,8 @@ $primary: #D81E05;
 
 @import url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
 
+
+
 .navbar {
   background-color: black !important;
   vertical-align: middle;
@@ -156,7 +158,47 @@ main {
   color: black;
 }
 
+.active  .collapse{
+  background-color: inherit;
+}
 
+
+
+
+.panel-heading {
+  background-color: #36454f !important;
+}
+
+.panel-collapse {
+  padding: 10px;
+  background-color: white !important;
+  color: black !important;
+}
+.panel-body {
+  padding: 10px;
+  font-size: 24px;
+  color: black;
+}
+
+h4 {
+  color: white;
+}
+
+a {
+  font-size: 32px;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+h4 a:hover {
+  text-decoration: underline !important;
+}
+
+
+
+.panel-title {
+
+}
 
 .container1 .jumbotron1 {
   background-color: white;

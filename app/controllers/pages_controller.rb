@@ -16,5 +16,6 @@ class PagesController < ApplicationController
   end
 
   def browse
+    @resources = Resource.all
   end
 end

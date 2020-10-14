@@ -162,6 +162,7 @@ GEM
       activesupport (>= 5.2)
     polyamorous (2.3.2)
       activerecord (>= 5.2.1)
+    popper_js (1.16.0)
     public_suffix (4.0.6)
     puma (4.3.6)
       nio4r (~> 2.0)
@@ -279,9 +280,11 @@ DEPENDENCIES
   capybara (>= 2.15)
   devise
   jbuilder (~> 2.7)
+  jquery-rails
   listen (~> 3.2)
   pg (= 1.2.3)
   pg_search
+  popper_js (~> 1.9, >= 1.9.9)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.3)
   sass-rails (>= 6)

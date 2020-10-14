@@ -7,3 +7,15 @@
   color: white !important;
   text-decoration: underline !important;
 }
+
+.active  .collapse{
+  background-color: inherit;
+}
+
+.panel-group {
+  background-color: black !important;
+}
+
+.panel .panel-default {
+  background-color: black !important;
+}
