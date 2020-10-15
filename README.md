@@ -33,3 +33,11 @@ These are meant to give your project a good start, but if you don't need a parti
    If you don't need it, the traditional Rails assets will continue to work.
 5. [Bootstrap](https://getbootstrap.com/) provides a CSS framework for easy layouts and styling.
 6. [Sass](https://sass-lang.com/guide) adds some extra power to your stylesheets when they have the `.scss` extension. Regular CSS will always work great in them too!
+
+## Future Tasks and Goals##
+
+1. Determine resource buckets/categories
+2. Hyperlinks on individual fund pages
+3. Add user sign up page with a .grinnell.edu verification
+4. More relaxed administrative priviledges where anyone can add resources but only admins can approve
+5. Sort functionality for the resources page
