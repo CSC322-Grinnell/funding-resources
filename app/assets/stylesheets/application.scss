@@ -33,6 +33,7 @@ $primary: #D81E05;
 
 .navbar-brand {
   width:150px;
+  margin-left: 50px !important;
 }
 
 div#mainNavbar ul li a{
@@ -52,6 +53,7 @@ h1, h2, h3, li {
 
 body{
   background-color: black;
+  overflow-x: hidden;
 }
 
 .container .jumbotron {
