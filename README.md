@@ -1,6 +1,6 @@
 # README #
 
-Welcome to your new Rails project! test
+Welcome to the campus funding resources project. Visit the site at `https://funding-resources.herokuapp.com`
 
 ## Getting started ##
 
@@ -18,7 +18,8 @@ To create a default admin user for development, run:
 rails db:seed
 ```
 
-You will then be able to log in as `admin@example.com`, password `password` in development mode. On heroku, log in as 'hello@fundingteam.com', password 'gcresources'.
+You will then be able to log in as `admin@example.com`, password `password` in development mode. 
+On heroku, log in as `hello@fundingteam.com`, password `gcresources`.
 
 ## What's in the box ##
 
