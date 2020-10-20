@@ -18,7 +18,7 @@ To create a default admin user for development, run:
 rails db:seed
 ```
 
-You will then be able to log in as `admin@example.com`, password `password`.
+You will then be able to log in as `admin@example.com`, password `password` in development mode. On heroku, log in as 'hello@fundingteam.com', password 'gcresources'.
 
 ## What's in the box ##
 
