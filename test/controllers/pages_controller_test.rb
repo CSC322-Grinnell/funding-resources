@@ -6,4 +6,19 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get resources" do
+    get funds_url
+    assert_response :success
+  end
+
+  test "should get contact" do
+    get contact_url
+    assert_response :success
+  end
+
+  test "should get browse" do
+    get browse_url
+    assert_response :success
+  end
+
 end

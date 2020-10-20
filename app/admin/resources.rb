@@ -15,6 +15,7 @@ ActiveAdmin.register Resource do
   #   permitted
   # end
 
+  #Definining the various categories for each resource
   permit_params :title, :description, :amount, :source, :cp
 
 end
