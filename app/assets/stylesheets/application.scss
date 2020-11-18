@@ -81,20 +81,12 @@ span {
   padding: 128px;
 }
 
-.btn1 {
-  background-color: red;
-  color: white;
-  padding: 32px 64px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 32px;
-}
 
 .card-body {
   padding: 32px;
   border-style: inset;
   border-width: 2px;
-  border-color: red;
+  border-color: #D81E05;
 }
 
 .card-title {
@@ -210,4 +202,24 @@ h4 a:hover {
   position: absolute;
   width: 100vw;
   top: 20%;
+}
+
+#resource_search {
+    color: white;
+    font-family: "Futura", sans-serif;
+}
+
+.btn1 {
+    font-family: "Futura", sans-serif;
+    border-radius: 8px;
+    text-align: center;
+    padding: 40px;
+    font-size: 35px;
+    color: white;
+    border: 2px solid black;
+    background: #D81E05;
+}
+
+.jumbotron {
+    font-family: "Futura";
 }
