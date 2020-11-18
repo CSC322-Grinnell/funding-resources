@@ -18,6 +18,6 @@ class ApplicationController < ActionController::Base
       admin_dashboard_path
     else
       stored_location_for(resource) || super
-   end
+    end
   end
 end
