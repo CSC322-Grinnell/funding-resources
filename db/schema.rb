@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_30_030256) do
+ActiveRecord::Schema.define(version: 2020_11_19_185151) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,11 @@ ActiveRecord::Schema.define(version: 2020_09_30_030256) do
     t.string "cp"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "international_elgibility"
+    t.string "funding_type"
+    t.boolean "first_come_first_serve"
+    t.boolean "rubric_available"
+    t.boolean "fin_aid_dependent"
   end
 
   create_table "users", force: :cascade do |t|
