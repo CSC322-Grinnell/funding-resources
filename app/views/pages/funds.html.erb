@@ -4,24 +4,39 @@
   <div class="text-center">
     <h1> Resources </h1>
   </div>
-  <div class="panel-group" id="accordion">
-    <% @resources.each_with_index do |resource, index| %>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a id="heading<%= index+1 %>" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= index+1 %>" >
-              <%= resource.title %>
-            </a>
-          </h4>
-        </div>
-        <div id="collapse<%= index+1 %>" data-parent="#heading<%= index+1 %>" class="panel-collapse collapse">
-          <div class="panel-body">
-            <%= resource.description %>
+  
+  <div class="container">
+  <div class="row">
+    
+    <!-- left hand navigation bar -->
+    <div class="col-5">
+    <div class="sidenav">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    </div>
+  
+  
+    <!-- rendered funds -->
+    <div class="card-deck">
+      <% @resources.each do |resource| %>
+        <div class="card", style="width: 40px;">
+          <h5 class="card-title"><%= resource.title %></h5>
+          <div class="card-body">
+            <p class="card-text">This will be the resource description.</p>
           </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
+   
   </div>
-
-
+  </div> 
+  
   </body>
+
+<!-- Useful sources:
+https://stackoverflow.com/questions/24659471/nested-rows-with-bootstrap-grid-system
+https://stackoverflow.com/questions/5304403/ruby-rails-html-create-new-table-row-after-x-cells-from-loop
+-->

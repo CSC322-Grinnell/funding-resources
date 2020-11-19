@@ -3,19 +3,46 @@
   text-decoration: none !important;
 }
 
-.container h1 a:hover{
+.container h1 a:hover {
   color: white !important;
   text-decoration: underline !important;
 }
 
-.active  .collapse{
+.active .collapse {
   background-color: inherit;
 }
 
 .panel-group {
   background-color: black !important;
+  font-family: sans-serif;
 }
 
 .panel .panel-default {
   background-color: black !important;
+}
+
+.text-center {
+  font-family: "Futura";
+  font-size: 30px;
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 100px; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  font-family: "Futura";
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
 }
