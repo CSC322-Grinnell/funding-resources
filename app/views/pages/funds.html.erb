@@ -9,26 +9,32 @@
   <div class="row">
     
     <!-- left hand navigation bar -->
-    <div class="col-5">
+    <div class="col-sm">
     <div class="sidenav">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <a href="#">Option 1</a>
+      <a href="#">Option 2</a>
+      <a href="#">Option 3</a>
+      <a href="#">Option 4</a>
     </div>
     </div>
   
   
     <!-- rendered funds -->
-    <div class="card-deck">
-      <% @resources.each do |resource| %>
-        <div class="card", style="width: 40px;">
-          <h5 class="card-title"><%= resource.title %></h5>
-          <div class="card-body">
-            <p class="card-text">This will be the resource description.</p>
-          </div>
-        </div>
-      <% end %>
+    <div class="col-10">
+      <div class="card-deck">
+        <% @resources.each_slice(3) do |resource_slice| %>
+          <div class="row">
+            <% resource_slice.each do |resource| %>
+              <div class="card",>
+                <h5 class="card-title"><%= resource.title %></h5>
+                <div class="card-body">
+                  <p class="card-text">This will be the resource description.</p>
+                </div>
+              </div>
+            <% end %>
+          </div>    
+        <% end %>
+      </div>
     </div>
    
   </div>
