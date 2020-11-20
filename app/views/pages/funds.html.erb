@@ -1,46 +1,29 @@
-<link rel="stylesheet" type="text/css" href="funds.css">
-
-  <body>
+<body>
   <div class="text-center">
     <h1> Resources </h1>
   </div>
   
   <div class="container">
   <div class="row">
-    
-    <!-- left hand navigation bar -->
-    <div class="col-sm">
-    <div class="sidenav">
-      <a href="#">Option 1</a>
-      <a href="#">Option 2</a>
-      <a href="#">Option 3</a>
-      <a href="#">Option 4</a>
-    </div>
-    </div>
+    <%= render partial: 'layouts/funds_navbar' %>
   
   
     <!-- rendered funds -->
-    <div class="col-10">
-      <div class="card-deck">
-        <% @resources.each_slice(3) do |resource_slice| %>
-          <div class="row">
-            <% resource_slice.each do |resource| %>
-              <div class="card",>
-                <h5 class="card-title"><%= resource.title %></h5>
-                <div class="card-body">
-                  <p class="card-text">This will be the resource description.</p>
-                </div>
-              </div>
-            <% end %>
-          </div>    
-        <% end %>
-      </div>
+    <div class="card-columns">
+      <% @resources.each_slice(3) do |resource_slice| %>
+          <% resource_slice.each do |resource| %>
+            <div class="card">
+              <h5 class="card-title"><%= resource.title %></h5>
+              <p class="card-text">This will be the resource description.</p>
+            </div>
+          <% end %>
+      <% end %>
     </div>
    
   </div>
   </div> 
   
-  </body>
+</body>
 
 <!-- Useful sources:
 https://stackoverflow.com/questions/24659471/nested-rows-with-bootstrap-grid-system
