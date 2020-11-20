@@ -1,24 +1,17 @@
-.container h1 a{
-  color: white !important;
-  text-decoration: none !important;
+.card-title {
+  font-family: "Roboto";
+  font-size: 18px;
+  padding-top: 10px;
+  color: black;
+  text-align: center;
 }
 
-.container h1 a:hover {
-  color: white !important;
-  text-decoration: underline !important;
-}
-
-.active .collapse {
-  background-color: inherit;
-}
-
-.panel-group {
-  background-color: black !important;
-  font-family: sans-serif;
-}
-
-.panel .panel-default {
-  background-color: black !important;
+.card-text {
+  font-family: "Roboto";
+  color: black;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .text-center {
@@ -43,6 +36,16 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
   display: block;
+}
+
+.form-check {
+  padding-left: 40px;
+}
+
+.form-check-label {
+  color: white;
+  font-family: "Futura";
+  stroke: 100;
+  font-size: 16px;
 }
