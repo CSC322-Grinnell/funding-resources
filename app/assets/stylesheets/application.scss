@@ -42,62 +42,35 @@ div#mainNavbar ul li a{
   text-decoration: none;
 }
 
-div#mainNavbar ul li a:hover{
-  text-decoration: underline;
-}
-
 h1, h2, h3, li {
   color: white;
 }
 
-body{
+body {
   background-color: black;
   overflow-x: hidden;
 }
 
+
 .container .jumbotron {
   background-color: transparent;
 }
+
+
 .container .jumbotron a {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke: 2px black;
   color: white;
   font-size: 128px;
   text-decoration: none;
 }
 
-.container .jumbotron a:hover {
-  color: white;
-  font-size: 128px;
-}
-
-div-small{
+div-small {
   padding: 64px;
-  display: block
+  display: block;
 }
 
 span {
   padding: 128px;
-}
-
-
-.btn {
-  background-color: red;
-  color: white;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  float: right;
-}
-
-.btn a:hover {
-    text-decoration: underline;
-}
-
-html,
-#intro {
-    height: 100%;
 }
 
 h1-main {
@@ -105,38 +78,8 @@ h1-main {
   color: black;
 }
 
-main {
-  background-color: white;
-}
-
-
-#intro {
-    background: url("https://www.grinnell.edu/sites/default/files/styles/landing_page_hero/public/images/2019-03/Header%20Image-6.jpg?h=aecdb15b&itok=bbKetzU4")no-repeat center center fixed;
-    background-blend-mode: opacity;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-
-
-#funds {
-  height: 100%;
-}
-
-#funds {
-  background-size: cover;
-  background-color: white;
-  color: black;
-}
-
 .active  .collapse{
   background-color: inherit;
-}
-
-h4 {
-  color: white;
 }
 
 a {
@@ -145,23 +88,8 @@ a {
   text-decoration: none !important;
 }
 
-h4 a:hover {
-  text-decoration: underline !important;
-}
-
 .container1 .jumbotron1 {
   background-color: white;
-}
-
-.fund-container{
-  position: absolute;
-  width: 100vw;
-  top: 20%;
-}
-
-#resource_search {
-    color: white;
-    font-family: "Futura", sans-serif;
 }
 
 .btn1 {
@@ -173,8 +101,4 @@ h4 a:hover {
     color: white;
     border: 2px solid black;
     background: #D81E05;
-}
-
-.jumbotron {
-    font-family: "Futura";
 }
