@@ -6,7 +6,8 @@ class Resource < ApplicationRecord
   #the type of search (tsearch = full text search);
   #and whether it should search for partial words or not (prefix: true)
   pg_search_scope :search, against: [:title, :description, :amount, :cp, :source], using: {tsearch: {prefix: true}}
-
+  pg_search_scope :search_amount, against: [:amount], using: {tsearch: {prefix: true}}
+  
   def print_decription
     return "#{description}"
   end
