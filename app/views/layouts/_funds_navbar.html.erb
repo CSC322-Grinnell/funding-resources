@@ -4,57 +4,37 @@
 
       <!-- requirements check boxes -->
       <a>Elgibility</a>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="international">
-          <label class="form-check-label" for="international">International</label>
-        </input>
-      </div>
       
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="international">
-          <label class="form-check-label" for="international">Year One</label>
-        </input>
-      </div>
+      <%= form_with(url: "/search", method: "get") do %>
       
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="international">
-          <label class="form-check-label" for="international">Year Two</label>
-        </input>
-      </div>
+      <%= hidden_field_tag :query, params[:query] %>
       
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="international">
-          <label class="form-check-label" for="international">Year Three</label>
-        </input>
-      </div>
+      <%= check_box_tag(:international, "International") %>
+      <%= label_tag(:international, "International") %>
+      <br>
       
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="international">
-          <label class="form-check-label" for="international">Year Four</label>
-        </input>
-      </div>
+      <%= check_box_tag(:bipoc) %>
+      <%= label_tag(:bipoc, "BIPOC") %>
+      <br>
       
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="international">
-          <label class="form-check-label" for="international">LGBTQ+</label>
-        </input>
-      </div>
+      <%= check_box_tag(:lgbtq) %>
+      <%= label_tag(:lgbtq, "LGBTQ") %>
+      <br>
       
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="international">
-          <label class="form-check-label" for="international">BIPOC</label>
-        </input>
-      </div>
+      <%= check_box_tag(:first_year) %>
+      <%= label_tag(:first_year, "First Year") %>
+      <br>
       
+      <%= check_box_tag(:travel) %>
+      <%= label_tag(:travel, "For Travel") %>
+      <br>
       
-      <!-- grant amount slider -->
-      <a>Grant Amount</a>
-      <input type="range" class="custom-range" min="0" max="3000" step="10">
+      <%= check_box_tag(:prof_dev) %>
+      <%= label_tag(:prof_dev, "For Professional Developement") %>
+      <br>
+      <%= submit_tag("Search") %>
       
-      <div style="padding-top:15px">
-        <Button type="button">
-            Update Results
-        </Button>
-      </div>
-    </div>
+
+      <% end %>
   </div>
+</div>
