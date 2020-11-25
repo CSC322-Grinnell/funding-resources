@@ -70,6 +70,13 @@ nav ul li a:hover {
   transition: .5s;
 }
 
+nav label.checkbtn {
+  font-size: 30px;
+  color: white;
+  //float: right;
+  //line-height: 80px;
+  //margin-right: 40px;
+}
 
 h1, h2, h3, li {
   color: white;
@@ -80,7 +87,6 @@ body {
   overflow-x: hidden;
   font-family: "Futura";
 }
-
 
 .container .jumbotron {
   background-color: transparent;
@@ -100,7 +106,7 @@ div-small {
 }
 
 span {
-  padding: 128px;
+  padding: 115px;
 }
 
 h1-main {

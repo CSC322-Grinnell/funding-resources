@@ -1,11 +1,18 @@
+<!-- references
+       • https://www.youtube.com/watch?v=oLgtucwjVII
+-->
+
 <nav>
   <%= link_to root_path do %>
   <%= image_tag "Logo.png", class: "navbar-brand" %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   <% end %>
-
+  <!--<input type="checkbox" id="check"/>-->
+  <!--<label for="check" class="checkbtn"/>-->
   <ul>
       <li>
       <%= link_to "Resources", funds_path, class: "#{"active" if (current_page? funds_path)}"%>
+      </li>
       <li>
         <%= link_to "Browse", browse_path, class: "#{"active" if (current_page? browse_path)}"%>
       </li>
