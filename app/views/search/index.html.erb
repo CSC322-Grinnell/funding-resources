@@ -1,24 +1,72 @@
 <div class="container">
   
-  <!-- header -->
-  <h1 id = "resource_search"><center> Search for a Resource Here </center></h1>
-  
-  <div class="row" style="padding-top:50px">
+  <div class="inner">
     
-    <div class="col-2">
+    <div class="child1">
       
       <!-- eligibility filter --> <!-- want this to be on the same level as the search bar -->
-      <div position="absolute">
-      <%= render partial: 'layouts/funds_navbar' %>
-      </div>
       
+        
+          <!-- requirements check boxes -->
+          <h1>Elgibility</h1>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="international">
+              <label class="form-check-label" for="international">International</label>
+            </input>
+          </div>
+          
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="international">
+              <label class="form-check-label" for="international">Year One</label>
+            </input>
+          </div>
+          
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="international">
+              <label class="form-check-label" for="international">Year Two</label>
+            </input>
+          </div>
+          
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="international">
+              <label class="form-check-label" for="international">Year Three</label>
+            </input>
+          </div>
+          
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="international">
+              <label class="form-check-label" for="international">Year Four</label>
+            </input>
+          </div>
+          
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="international">
+              <label class="form-check-label" for="international">LGBTQ+</label>
+            </input>
+          </div>
+          
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="international">
+              <label class="form-check-label" for="international">BIPOC</label>
+            </input>
+          </div>
+          
+          <!-- grant amount slider -->
+          <h1>Grant Amount</h1>
+          <input type="range" class="custom-range" min="0" max="3000" step="10">
+          
+          <div style="padding-top:15px">
+            <Button type="button">
+                Update Results
+            </Button>
+          </div>  
     </div>
       
     
-    <div class="col-10">
+    <div class="child2">
       
       <!-- search bar -->
-      <div id="search_bar" style="padding-bottom:50px">
+      <div id="search_bar">
           <%= form_tag(search_index_path, method: "get") do %>
           <%= text_field_tag :query %>
           <%= submit_tag("Search", :style => "color: white; font-family: \"Futura\";") %>
@@ -29,7 +77,7 @@
       <div class="card-columns">
         <% @resources.each_with_index do |resource, i| %>
         <a href="resources/<%=i+1%>">
-        <div class="card text-center" style="width: 18rem;">
+        <div class="card text-center">
           <div class="card-body">
             <h5 class="card-title"><%=resource.title%></h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget risus sit amet nisl mattis condimentum.</p>

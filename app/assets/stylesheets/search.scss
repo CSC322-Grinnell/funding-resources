@@ -1,3 +1,51 @@
 // Place all the styles related to the Search controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+#container {
+    overflow: hidden;
+    background-color: red;
+    padding: 0px;
+    width: 100%;
+}
+
+#inner {
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    width: 2000px;
+}
+
+.child1 {
+    float: left;
+    position: relative;
+    //background-color: pink;
+    width: 20%;
+}
+
+.child2 {
+    float: left;
+    position: relative;
+    //background-color: pink;
+    width: 80%;
+}
+
+.child1 input.custom-range {
+    width: 150px;
+}
+
+.child2 div#search_bar {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+    .child2 div.card-columns {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 995px) {
+    .child2 div.card-columns {
+        column-count: 1;
+    }
+}

@@ -1,21 +1,23 @@
-<nav class="navbar navbar-expand-md navbar-dark flex-column flex-md-row bg-dark">
+<!-- references
+       • https://www.youtube.com/watch?v=oLgtucwjVII
+-->
 
+<nav>
   <%= link_to root_path do %>
   <%= image_tag "Logo.png", class: "navbar-brand" %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   <% end %>
-
-  <div class="collapse navbar-collapse" id="mainNavbar">
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item mx-4">
-          <%= link_to "Resources", funds_path%>
-        </li>
-        <li class="nav-item mx-4">
-          <%= link_to "Browse", browse_path%>
-        </li>
-        <li class="nav-item mx-4">
-          <%= link_to "Contact", contact_path%>
-        </li>
-    </ul>
-  </div>
-
+  <!--<input type="checkbox" id="check"/>-->
+  <!--<label for="check" class="checkbtn"/>-->
+  <ul>
+      <li>
+      <%= link_to "Resources", funds_path, class: "#{"active" if (current_page? funds_path)}"%>
+      </li>
+      <li>
+        <%= link_to "Browse", browse_path, class: "#{"active" if (current_page? browse_path)}"%>
+      </li>
+      <li>
+        <%= link_to "Contact", contact_path, class: "#{"active" if (current_page? contact_path)}"%>
+      </li>
+  </ul>
 </nav>
