@@ -1,26 +1,41 @@
-<body>
-  <div class="text-center">
-    <h1> Resources </h1>
-  </div>
-  
-  <div class="container">
-  <!-- rendered funds -->
-    <div class="card-columns">
-      <% @resources.each_slice(3) do |resource_slice| %>
-          <% resource_slice.each do |resource| %>
-            <div class="card">
-              <h5 class="card-title"><%= resource.title %></h5>
-              <p class="card-text">This will be the resource description.</p>
-            </div>
-          <% end %>
-      <% end %>
-    </div>
-    
-  </div> 
-  
-</body>
+<body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading" style = "color:black">Search Funds</h1>
+        </div>
+      </section>
+      
+      <div class = "album py-5 bg-light">
+        <div class = "container">
+          <div class = "row">
+            <% @resources.each do |resource| %>
+              <div class = "col-md-3", align = "center">
+                <h2 style = "color:black"> <%= resource.title %></h2>
+                <p> 
+                      Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. 
+                      Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. 
+                      Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. 
+                </p>
+                <p>
+                  <a href = "https://www.grinnell.edu/user/sannings" class = "btn btn-primary">Contact Info</a>
+                </p>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </main>
 
-<!-- Useful sources:
-https://stackoverflow.com/questions/24659471/nested-rows-with-bootstrap-grid-system
-https://stackoverflow.com/questions/5304403/ruby-rails-html-create-new-table-row-after-x-cells-from-loop
--->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="208" height="225" viewBox="0 0 208 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="11" style="font-weight:bold;font-size:11pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body>
