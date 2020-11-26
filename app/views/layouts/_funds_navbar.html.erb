@@ -9,29 +9,10 @@
       
       <%= hidden_field_tag :query, params[:query] %>
       
-      <%= check_box_tag(:international, "International") %>
-      <%= label_tag(:international, "International") %>
+      <%= check_box_tag(:notFinAid, "Not Tied to Financial Aid") %>
+      <%= label_tag(:notFinAid, "Not Tied to Financial Aid") %>
       <br>
-      
-      <%= check_box_tag(:bipoc) %>
-      <%= label_tag(:bipoc, "BIPOC") %>
-      <br>
-      
-      <%= check_box_tag(:lgbtq) %>
-      <%= label_tag(:lgbtq, "LGBTQ") %>
-      <br>
-      
-      <%= check_box_tag(:first_year) %>
-      <%= label_tag(:first_year, "First Year") %>
-      <br>
-      
-      <%= check_box_tag(:travel) %>
-      <%= label_tag(:travel, "For Travel") %>
-      <br>
-      
-      <%= check_box_tag(:prof_dev) %>
-      <%= label_tag(:prof_dev, "For Professional Developement") %>
-      <br>
+
       <%= submit_tag("Search") %>
       
 
