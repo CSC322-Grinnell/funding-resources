@@ -1,9 +1,17 @@
 class SearchController < ApplicationController
   def index
    if params[:query].present?
-     @resources = Resource.search(params[:query])
+        if params[:notFinAid].present?
+            @resources = Resource.tagged_with(:names => ['notFinAid'], :match => :any).search(params[:query])
+        else
+            @resources = Resource.search(params[:query])
+        end
    else
-     @resources = Resource.all
+        if params[:notFinAid].present?
+            @resources = Resource.tagged_with(:names => ['notFinAid'], :match => :any)
+        else
+            @resources = Resource.all
+        end
    end
   end
 end

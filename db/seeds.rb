@@ -23,3 +23,4 @@ Resource.create(title: 'Grinnell Outdoor Recreation Program', cp: 'David Zeiss')
 Resource.create(title: 'Disability Resources', cp: 'Autumn Wilke')
 Resource.create(title: 'Financial Aid', cp: 'Brad Lindberg')
 Resource.create(title: 'Center for Religion Spirituality and Social Justice', cp: 'Deanna Shorb')
+Resource.first.tag_names << ['notFinAid']
