@@ -3,17 +3,20 @@
     <div class="sidenav">
 
       <!-- requirements check boxes -->
-      <a>Elgibility</a>
+      <a>Eligibility</a>
       
       <%= form_with(url: "/search", method: "get") do %>
       
       <%= hidden_field_tag :query, params[:query] %>
       
-      <%= check_box_tag(:notFinAid, "Not Tied to Financial Aid") %>
-      <%= label_tag(:notFinAid, "Not Tied to Financial Aid") %>
+      <% @tags.each do |tag| %>
+        <%= check_box_tag(tag.name, tag.name) %>
+        <%= label_tag(tag.name, tag.name) %> <br>
+      <% end %>
+      
       <br>
 
-      <%= submit_tag("Search") %>
+      <%= submit_tag("Update tags") %>
       
 
       <% end %>
