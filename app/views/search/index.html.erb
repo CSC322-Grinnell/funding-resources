@@ -1,100 +1,58 @@
-<div class="container">
+<body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
   
-  <div class="inner">
-    
-    
-    <div class="child1">
-      
-      <!-- eligibility filter --> <!-- want this to be on the same level as the search bar -->
-      
-        
-          <!-- requirements check boxes -->
-          <!--
-          <h1>Elgibility</h1>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="international">
-              <label class="form-check-label" for="international">International</label>
-            </input>
-          </div>
-          
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="international">
-              <label class="form-check-label" for="international">Year One</label>
-            </input>
-          </div>
-          
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="international">
-              <label class="form-check-label" for="international">Year Two</label>
-            </input>
-          </div>
-          
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="international">
-              <label class="form-check-label" for="international">Year Three</label>
-            </input>
-          </div>
-          
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="international">
-              <label class="form-check-label" for="international">Year Four</label>
-            </input>
-          </div>
-          
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="international">
-              <label class="form-check-label" for="international">LGBTQ+</label>
-            </input>
-          </div>
-          
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="international">
-              <label class="form-check-label" for="international">BIPOC</label>
-            </input>
-          </div>
-          -->
-          <!-- grant amount slider -->
-          <!--
-          <h1>Grant Amount</h1>
-          <input type="range" class="custom-range" min="0" max="3000" step="10">
-          
-          <div style="padding-top:15px">
-            <Button type="button">
-                Update Results
-            </Button>
-          </div>  
-          -->
-          
+          <!-- search bar -->
+  <div id="search_bar">
+    <%= form_tag(search_index_path, method: "get") do %>
+    <%= text_field_tag :query %>
+    <%= submit_tag("Search", :style => "color: white; font-family: \"Futura\";") %>
+    <% end %>
+  </div>
+ 
+<div class = "row">   
+  <div class = "col-lg-2 col-md-4">   
   <%= render partial: 'layouts/funds_navbar' %>
-    </div>
+  </div>
+
+
+  <div class = "col-lg-10 col-md-4">    
+    <main role="main">
       
-    
-    <div class="child2">
-      
-      <!-- search bar -->
-      <div id="search_bar">
-          <%= form_tag(search_index_path, method: "get") do %>
-          <%= text_field_tag :query %>
-          <%= submit_tag("Search", :style => "color: white; font-family: \"Futura\";") %>
-          <% end %>
-      </div>
-      
-      <!-- results -->
-      <div class="card-columns">
-        <% @resources.each_with_index do |resource, i| %>
-        <a href="resources/<%=i+1%>">
-        <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title"><%=resource.title%></h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget risus sit amet nisl mattis condimentum.</p>
-            <a href="#" class="btn btn-primary">Link to Application</a>
+      <div class = "album py-5 bg-light">
+        <div class = "container">
+          <div class = "row">
+            <% @resources.each do |resource| %>
+              <div class = "col-md-3", align = "center">
+                <h2 style = "color:black"> <%= resource.title %></h2>
+                <p> 
+                      Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. 
+                      Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. 
+                      Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. 
+                </p>
+                <p>
+                  <a href = "https://www.grinnell.edu/user/sannings" class = "btn btn-primary">Contact Info</a>
+                </p>
+              </div>
+            <% end %>
           </div>
         </div>
-        </a>
-        <% end %>
       </div>
+    </main>
+  </div>
+</div>  
 
-    </div><!-- class col-10 -->
-    
-  </div><!-- class row -->
-</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="208" height="225" viewBox="0 0 208 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="11" style="font-weight:bold;font-size:11pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body>
+
+
+        
+
+
