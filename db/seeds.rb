@@ -9,7 +9,10 @@ User.create(email: 'admin@example.com', password: 'password', password_confirmat
 User.create(email: 'hello@fundingteam.com', password: 'gcresources', password_confirmation: 'gcresources', admin: true)
 
 #<Resource id: nil, title: nil, description: "FUND TEST", amount: nil, source: nil, cp: nil,
-Resource.create(title: 'Service & Social Innovation Grant', description: 'Social Service Grants through Grinnell', amount: '3000', cp: 'Kiera Wilson')
+resource1 = Resource.create(title: 'Service & Social Innovation Grant', description: 'Social Service Grants through Grinnell', amount: '3000', cp: 'Kiera Wilson')
+resource1.tag_names << 'notFinAid'
+resource1.save
+
 Resource.create(title: 'Summer Internship Funding Grants', description: 'Income supplementation for unpaid internships', amount: '1800', cp: 'Diego Rodriguez')
 Resource.create(title: 'Professional Development Grants', source: 'CLS Office', cp: 'Diego Rodriguez')
 Resource.create(title: 'Professional Attire Grants', source: 'CLS Office', cp: 'Laura Poole')
@@ -23,4 +26,3 @@ Resource.create(title: 'Grinnell Outdoor Recreation Program', cp: 'David Zeiss')
 Resource.create(title: 'Disability Resources', cp: 'Autumn Wilke')
 Resource.create(title: 'Financial Aid', cp: 'Brad Lindberg')
 Resource.create(title: 'Center for Religion Spirituality and Social Justice', cp: 'Deanna Shorb')
-Resource.first.tag_names << ['notFinAid']
