@@ -10,14 +10,9 @@
         <div class = "container">
           <div class = "row">
             <% @resources.each do |resource| %>
-              <div class = "col-md-3", align = "center">
+              <div class = "col-lg-3 col-md-4 col-sm-12", align = "center">
                 <h2 style = "color:black"> <%= resource.title %></h2>
-                <p> 
-                      Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. 
-                      Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. 
-                      Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. Perry the Platypus. 
-                </p>
-                <p>
+                <p><%= resource.description %><p>
                   <a href = "https://www.grinnell.edu/user/sannings" class = "btn btn-primary">Contact Info</a>
                 </p>
               </div>
