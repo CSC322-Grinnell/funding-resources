@@ -34,12 +34,17 @@ $primary: #D81E05;
 
 .navbar-brand {
   width:150px;
-  margin-left: 10px !important;
+  margin-left: 1em !important;
+}
+
+.navbar-collapse.show, .navbar-collapse.collapsing {
+  background: black;
 }
 
 nav {
   background-color: darkred !important;
   height: 100px;
+  position: fixed;
 }
 
 nav ul {
@@ -105,16 +110,12 @@ div-small {
   display: block;
 }
 
-span {
-  padding: 115px;
-}
-
 h1-main {
   font-size: 26;
   color: black;
 }
 
-.active  .collapse{
+.active .collapse {
   background-color: inherit;
 }
 
