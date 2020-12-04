@@ -8,15 +8,18 @@
     <% end %>
   </div>
  
-<div class = "row">   
-  <div class = "col-lg-2 col-md-3">   
-    <div id="mySidebar" class="sidebar" onclick="toggleSidebar()">
+
+
+  <div class = "container" id = "narrow-search">
+    <button class="btn btn-dark" data-toggle="collapse" data-target="#fundsNavbar" aria-expanded="false" aria-controls="fundsNavbar" role = "button">
+      Narrow Search
+    </button>
+    <br>
+    <div class="collapse" id="fundsNavbar">
       <%= render partial: 'layouts/funds_navbar' %>
     </div>
   </div>
-
-
-  <div class = "col-lg-10 col-md-9">    
+  
     <main role="main">
       <div class = "album py-5 bg-light">
         <div class = "container">
@@ -33,9 +36,7 @@
           </div>
         </div>
       </div>
-    </main>
-  </div>
-</div>  
+    </main> 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

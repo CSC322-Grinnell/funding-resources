@@ -19,10 +19,6 @@
   font-size: 30px;
 }
 
-.sidebar-sticky {
-  padding: 10px;
-}
-
 .form-check {
   padding-left: 40px;
 }
@@ -37,4 +33,13 @@
 #search_bar {
   text-align: center;
   padding: 20px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#narrow-search {
+  text-align: center;
+  padding-bottom: 2em;
 }

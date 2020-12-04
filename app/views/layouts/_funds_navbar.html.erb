@@ -1,18 +1,14 @@
-
-      <a>Eligibility</a>
-      
-      <%= form_with(url: "/search", method: "get") do %>
-      
-      <%= hidden_field_tag :query, params[:query] %>
-      
-      <% @tags.each do |tag| %>
-        <%= check_box_tag(tag.name, tag.name) %>
-        <%= label_tag(tag.name, tag.name) %> <br>
-      <% end %>
-      
-      <br>
-
-      <%= submit_tag("Update tags") %>
-      
-
-      <% end %>
+<%= form_with(url: "/search", method: "get") do %>
+  <%= hidden_field_tag :query, params[:query] %>
+  <%= @tags.each_slice(3) do |slice| %>
+    <% slice.each do |tag| %>
+    <a> 
+      <%= check_box_tag(tag.name, tag.name) %>
+      <%= label_tag(tag.name, tag.name, :style => "font-size: 12px;") %>
+    </a>
+    <% end %>
+    <br>
+  <% end %>
+  <br>
+  <button class = "btn btn-dark" type = "submit">Submit</button>
+<% end %>
