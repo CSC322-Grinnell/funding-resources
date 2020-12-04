@@ -10,7 +10,7 @@ User.create(email: 'hello@fundingteam.com', password: 'gcresources', password_co
 
 #<Resource id: nil, title: nil, description: "FUND TEST", amount: nil, source: nil, cp: nil,
 resource1 = Resource.create(title: 'Service & Social Innovation Grant', description: 'Social Service Grants through Grinnell', amount: '3000', cp: 'Kiera Wilson')
-resource1.tag_names << 'notFinAid'
+resource1.tag_names << 'Does not correspond with financial aid'
 resource1.save
 
 Resource.create(title: 'Summer Internship Funding Grants', description: 'Income supplementation for unpaid internships', amount: '1800', cp: 'Diego Rodriguez')
