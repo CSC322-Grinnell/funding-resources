@@ -1,23 +1,26 @@
-<!-- references
-       • https://www.youtube.com/watch?v=oLgtucwjVII
--->
-
-<nav>
-  <%= link_to root_path do %>
-  <%= image_tag "Logo.png", class: "navbar-brand" %>
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <% end %>
-  <!--<input type="checkbox" id="check"/>-->
-  <!--<label for="check" class="checkbtn"/>-->
-  <ul>
-      <li>
-      <%= link_to "Resources", funds_path, class: "#{"active" if (current_page? funds_path)}"%>
+<nav class="navbar navbar-expand-lg">
+  <a id = "navbarLinks">
+    <%= link_to root_path do %>
+    <%= image_tag "Logo.png", class: "navbar-brand" %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <% end %>
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <%= link_to "Resources", funds_path, class: "#{"active" if (current_page? funds_path)}"%>
       </li>
-      <li>
-        <%= link_to "Browse", browse_path, class: "#{"active" if (current_page? browse_path)}"%>
+      <li class="nav-item">
+        <a><%= link_to "Browse", browse_path, class: "#{"active" if (current_page? browse_path)}"%></a>
       </li>
-      <li>
-        <%= link_to "Contact", contact_path, class: "#{"active" if (current_page? contact_path)}"%>
+      <li class="nav-item">
+        <a><%= link_to "Contact", contact_path, class: "#{"active" if (current_page? contact_path)}"%></a>
       </li>
-  </ul>
+    </ul>
+  </div>
 </nav>
