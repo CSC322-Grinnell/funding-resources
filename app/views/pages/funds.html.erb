@@ -10,11 +10,16 @@
         <div class = "container">
           <div class = "row">
             <% @resources.each do |resource| %>
-              <div class = "col-lg-3 col-md-4 col-sm-12", align = "center">
-                <h2 style = "color:black"> <%= resource.title %></h2>
-                <p><%= resource.description %><p>
-                  <a href = "https://www.grinnell.edu/user/sannings" class = "btn btn-primary">Contact Info</a>
-                </p>
+              <div class = "col-lg-3 col-md-4 col-sm-12 mb-3", align = "center">
+                <div class="card card-custom">
+                  <div class="card-body">
+                    <h2 style = "color:black"> <%= resource.title %></h2>
+                    <p><%= truncate(resource.description, :length => 200) %><p>
+                  </div>
+                  <div class="card-footer text-muted">
+                    <a href = "https://www.grinnell.edu/user/sannings" class = "btn btn-primary">Contact Info</a>
+                  </div>
+                </div>  
               </div>
             <% end %>
           </div>
