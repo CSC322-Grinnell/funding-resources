@@ -42,9 +42,16 @@ $primary: #D81E05;
 }
 
 nav {
-  background-color: darkred !important;
   height: 100px;
   position: fixed;
+}
+
+nav#dark {
+  background-color: darkred !important;
+}
+
+nav#light {
+  background-image: linear-gradient(to right, gray, white);
 }
 
 nav ul {
@@ -58,15 +65,14 @@ nav ul li {
   margin: 0 5px;
 }
 
-nav ul li a {
-  color: white;
+nav div ul li a {
   font-size: 17px;
   padding: 15px 15px;
   border-radius: 3px;
   text-transform: uppercase;
 }
 
-.active {
+a.active {
   background: black;
 }
 
@@ -75,13 +81,28 @@ nav ul li a:hover {
   transition: .5s;
 }
 
-nav label.checkbtn {
-  font-size: 30px;
-  color: white;
-  //float: right;
-  //line-height: 80px;
-  //margin-right: 40px;
+.darkButton {
+  width: 115px;
+  height: 25px;
+  font-size: 15px;
+  background-color: gray;
+  border-radius: 10px;
+  margin: 28px;
+  padding: 1.8px;
 }
+
+.lightButton {
+  width: 115px;
+  height: 25px;
+  font-size: 15px;
+  background-color: #660000;
+  border-radius: 10px;
+  margin: 28px;
+  padding: 1.8px;
+}
+
+
+
 
 h1, h2, h3, li {
   color: white;
@@ -91,6 +112,14 @@ body {
   background-color: black;
   overflow-x: hidden;
   font-family: "Futura";
+}
+
+body#dark {
+  background-color: black;
+}
+
+body#light {
+  background-color: white;
 }
 
 .container .jumbotron {
