@@ -16,6 +16,18 @@ ActiveAdmin.register Resource do
   # end
 
   #Definining the various categories for each resource
-  permit_params :title, :description, :amount, :source, :cp
+  permit_params :title, :description, :amount, :source, :cp, tag_ids: []
+  
+  form do |f|
+    f.inputs do
+      f.input :tag_ids, as: :tags, collection: Gutentag::Tag.all, display_name: :name
+      f.input :title
+      f.input :description
+      f.input :amount
+      f.input :source
+      f.input :cp
+    end
+    f.actions
+  end
 
 end
