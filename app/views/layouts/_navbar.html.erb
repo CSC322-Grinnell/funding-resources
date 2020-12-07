@@ -23,10 +23,10 @@
         <%= link_to "Resources", funds_path, class: "#{"active" if (current_page? funds_path)}"%>
       </li>
       <li class="nav-item">
-        <a><%= link_to "Browse", browse_path, class: "#{"active" if (current_page? browse_path)}"%></a>
+        <%= link_to "Browse", browse_path, class: "#{"active" if (current_page? browse_path)}"%>
       </li>
       <li class="nav-item">
-        <a><%= link_to "Contact", contact_path, class: "#{"active" if (current_page? contact_path)}"%></a>
+        <%= link_to "Contact", contact_path, class: "#{"active" if (current_page? contact_path)}"%>
       </li>
     </ul>
   </div>
