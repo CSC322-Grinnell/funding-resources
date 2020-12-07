@@ -51,7 +51,7 @@ nav#dark {
 }
 
 nav#light {
-  background-image: linear-gradient(to right, gray, white);
+  background-image: linear-gradient(to right, black, white);
 }
 
 nav ul {
@@ -66,14 +66,28 @@ nav ul li {
 }
 
 nav div ul li a {
-  font-size: 17px;
+  font-size: 15px;
   padding: 15px 15px;
   border-radius: 3px;
   text-transform: uppercase;
 }
 
-a.active {
+nav#dark a {
+  color: white;
+}
+
+nav#light a {
+  color: black;
+}
+
+nav#dark div ul li a.active {
   background: black;
+  color: white;
+}
+
+nav#light div ul li a.active {
+  background: black;
+  color: green;
 }
 
 nav ul li a:hover {
@@ -101,13 +115,6 @@ nav ul li a:hover {
   padding: 1.8px;
 }
 
-
-
-
-h1, h2, h3, li {
-  color: white;
-}
-
 body {
   background-color: black;
   overflow-x: hidden;
@@ -129,7 +136,6 @@ body#light {
 
 .container .jumbotron a {
   -webkit-text-stroke: 2px black;
-  color: white;
   font-size: 128px;
   text-decoration: none;
 }
@@ -150,7 +156,6 @@ h1-main {
 
 a {
   font-size: 32px;
-  color: white !important;
   text-decoration: none !important;
 }
 
