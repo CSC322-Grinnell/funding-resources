@@ -32,7 +32,7 @@
                     <p><%= truncate(resource.description, :length => 200) %><p>
                   </div>
                   <div class="card-footer text-muted">
-                    <a href = "https://www.grinnell.edu/user/sannings" class = "btn btn-primary">Contact Info</a>
+                      <%= link_to "Contact Info", "#{resource.web}", class: "btn btn-primary", :target => "_blank"  %>
                   </div>
                 </div>  
               </div>
