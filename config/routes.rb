@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'showcase/index'
   root to: "pages#home"
   ActiveAdmin.routes(self)
   devise_for :users

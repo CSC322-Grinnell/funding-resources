@@ -7,6 +7,7 @@
 // layout file.
 //
 // For more information, see the webpacker gem: https://github.com/rails/webpacker#readme
+//= require fie
 
 import 'delete-me'
 

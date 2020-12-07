@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.9', '>= 1.9.9'
 gem 'pg', '1.2.3'
+gem 'fie', '~> 0.3.6'
 
 gem 'bootsnap', '>= 1.4.2', require: false
 

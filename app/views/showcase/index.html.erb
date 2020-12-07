@@ -1,0 +1,12 @@
+<div class="carousel">
+  <% @slideshow_images_names.each_with_index do |image_name, image_index| %>
+    <% if image_index == @slideshow_selected_image_index %>
+      <%= image_tag(image_name, class: 'animated fadeIn') %>
+    <% else %>
+      <%= image_tag(image_name, class: 'hidden') %>
+    <% end %>
+  <% end %>
+
+  <button fie-click="previous_image">&#x3C;-</button>
+  <button fie-click="next_image">-&#x3E;</button>
+</div>

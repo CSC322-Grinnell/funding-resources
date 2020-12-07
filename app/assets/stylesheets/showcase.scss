@@ -1,0 +1,30 @@
+.carousel {
+  position: relative;
+  display: inline-block;
+
+  img {
+    width: 100%;
+    display: block;
+
+    &.hidden-img {
+      display: none;
+    }
+  }
+
+  button {
+    height: 40px;
+    width: 40px;
+
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+
+    &:first-child {
+      left: 0;
+    }
+
+    &:last-child {
+      right: 0;
+    }
+  }
+}
