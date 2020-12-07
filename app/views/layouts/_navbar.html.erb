@@ -6,19 +6,19 @@
     <% end %>
   </a>
 
+  <% if cookies[:theme] == "light" %>
+    <%= link_to "dark mode: off", root_path(:theme => "dark", :current_path => request.path), class: "darkButton"%>
+  <% else %>
+    <%= link_to "dark mode: on", root_path(:theme => "light", :current_path => request.path), class: "lightButton"%>
+  <% end %>
   
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-bars"></i>
   </button>
   
-  <div class="collapse navbar-collapse sticky-top">
+  <div class="collapse navbar-collapse sticky-top" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-      <% if cookies[:theme] == "light" %>
-        <%= link_to "dark mode: off", root_path(:theme => "dark", :current_path => request.path), class: "darkButton"%>
-      <% else %>
-        <%= link_to "dark mode: on", root_path(:theme => "light", :current_path => request.path), class: "lightButton"%>
-      <% end %>
       <li class="nav-item">
         <%= link_to "Resources", funds_path, class: "#{"active" if (current_page? funds_path)}"%>
       </li>
