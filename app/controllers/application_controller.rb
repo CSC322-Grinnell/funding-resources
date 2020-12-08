@@ -1,4 +1,15 @@
 class ApplicationController < ActionController::Base
+  
+  before_action :set_theme
+
+  def set_theme
+    if params[:theme].present?
+      theme = params[:theme].to_sym
+      cookies[:theme] = theme
+      redirect_to params[:current_path]
+    end
+  end
+  
   private
 
   # Checks that a user is signed in and has admin privileges.
@@ -20,4 +31,7 @@ class ApplicationController < ActionController::Base
       stored_location_for(resource) || super
     end
   end
+  
+  
+
 end
