@@ -1,17 +1,3 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * Bootstrap provides good defaults for styling and some basic widgets.
- *
- * You're free to add application-wide styles to this file.
- *
- * Any overrides to Bootstrap variables should come before the import statement.
- */
-
 /* Grinnell Red ;)
 $primary: #D81E05;
  */
@@ -32,92 +18,6 @@ $primary: #D81E05;
   box-sizing: border-box;
 }
 
-.navbar-brand {
-  width:150px;
-  margin-left: 1em !important;
-}
-
-.navbar-collapse.show, .navbar-collapse.collapsing {
-  background: black;
-}
-
-nav {
-  height: 100px;
-  position: fixed;
-}
-
-nav#dark {
-  background-color: darkred !important;
-}
-
-nav#light {
-  background-image: -webkit-linear-gradient(left, black, white);
-  background-image: -moz-linear-gradient(left, black, white);
-  background-image: -o-linear-gradient(left, black, white);
-  background-image: linear-gradient(to right, black, white);
-}
-
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-nav ul li a {
-  font-size: 15px;
-  padding: 15px 15px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-
-nav#dark a {
-  color: white;
-}
-
-nav#light a {
-  color: black;
-}
-
-nav#dark div ul li a.active {
-  background: black;
-  color: white;
-}
-
-nav#light div ul li a.active {
-  background: black;
-  color: green;
-}
-
-nav ul li a:hover {
-  background: red;
-  transition: .5s;
-}
-
-.darkButton {
-  width: 115px;
-  height: 25px;
-  font-size: 15px;
-  background-color: gray;
-  border-radius: 10px;
-  margin: 28px;
-  padding: 1.8px;
-}
-
-.lightButton {
-  width: 115px;
-  height: 25px;
-  font-size: 15px;
-  background-color: #660000;
-  border-radius: 10px;
-  margin: 28px;
-  padding: 1.8px;
-}
-
 body {
   background-color: black;
   overflow-x: hidden;
@@ -125,7 +25,7 @@ body {
 }
 
 body#dark {
-  background-color: black;
+  background-color: lighten(black, 15%);
 }
 
 body#light {
@@ -141,6 +41,7 @@ body#light {
   -webkit-text-stroke: 2px black;
   font-size: 128px;
   text-decoration: none;
+  color: white;
 }
 
 div-small {
