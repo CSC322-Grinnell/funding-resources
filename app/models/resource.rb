@@ -1,6 +1,8 @@
 class Resource < ApplicationRecord
   #Including pg_search capabilities to this model
   include PgSearch::Model
+  
+  # include Gutentag gem
   ::Gutentag::ActiveRecord.call self
   
   #Definining the variables the pg_search should  work for,

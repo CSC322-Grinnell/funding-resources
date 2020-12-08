@@ -16,18 +16,30 @@ ActiveAdmin.register Resource do
   # end
 
   #Definining the various categories for each resource
+  # add parameters to forms. We use strong params to prevent people from making
+  # themselves an admin by defining an admin bool 
+  # https://activeadmin.info/2-resource-customization.html
+  
+  
   permit_params :title, :description, :amount, :source, :cp, tag_ids: []
+  
   
   form do |f|
     f.inputs do
-      f.input :tag_ids, as: :tags, collection: Gutentag::Tag.all, display_name: :name
       f.input :title
       f.input :description
       f.input :amount
       f.input :source
-      f.input :cp
+      f.input :contact_person
+      f.input :tag_ids, as: :selected_list
+      # there is a connection between resources and tags
     end
     f.actions
   end
 
 end
+
+# Alex notes:
+# has_many_through attribute for tags and resources
+# register tags on active admin
+# register model (command line): $> rails generate active_admin:resource [MyModelName]
