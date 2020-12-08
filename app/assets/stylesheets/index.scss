@@ -43,3 +43,13 @@ body {
   text-align: center;
   padding-bottom: 2em;
 }
+
+#dark .btn-primary {
+  color: white;
+  background-color: black;
+  border: black;
+}
+
+#light .btn-primary {
+  color: white;
+}

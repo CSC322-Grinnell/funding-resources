@@ -1,14 +1,16 @@
+<link rel="stylesheet" type="text/css" href="navbar.css">
+
 <nav class="navbar navbar-expand-lg" id="<%= cookies[:theme] %>">
   <a id = "navbarIcon">
     <%= link_to root_path do %>
-    <%= image_tag "Logo.png", class: "navbar-brand" %>
+    <%= image_tag "Logo.png", class: "navbar-brand", alt: "The title \'campus funding resources\' to the left of a red Grinnell College logo"%>
     <% end %>
   </a>
 
   <% if cookies[:theme] == "light" %>
-    <%= link_to "dark mode: off", root_path(:theme => "dark", :current_path => request.path), class: "darkButton"%>
+    <%= link_to "turn on dark mode", root_path(:theme => "dark", :current_path => request.path), class: "darkButton"%>
   <% else %>
-    <%= link_to "dark mode: on", root_path(:theme => "light", :current_path => request.path), class: "lightButton"%>
+    <%= link_to "turn on light mode", root_path(:theme => "light", :current_path => request.path), class: "lightButton"%>
   <% end %>
   
   
@@ -18,13 +20,13 @@
   
   <div class="collapse navbar-collapse sticky-top" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
+      <li class="nav-item" role = "button">
         <%= link_to "Resources", funds_path, class: "#{"active" if (current_page? funds_path)}"%>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" role = "button">
         <%= link_to "Browse", browse_path, class: "#{"active" if (current_page? browse_path)}"%>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" role = "button">
         <%= link_to "Contact", contact_path, class: "#{"active" if (current_page? contact_path)}"%>
       </li>
     </ul>

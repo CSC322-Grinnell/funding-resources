@@ -17,13 +17,13 @@ run `rake db:reset`.
 To log in as an administrator (access active admin by adding "/admin" to the end of the base url), use
 the following:
 ```
-admin@example.com
-password 
+username: admin@example.com
+password: password 
 ```
 
 ## Initial Setup ##
 
-Run `sudo apt-get install libpq-dev`. If prompted, update Yarn (https://gist.github.com/mikerourke/0c2cac1bec77fb4c1d875bfaee487074).
+Run `sudo apt-get install libpq-dev`. If prompted, update [Yarn](https://gist.github.com/mikerourke/0c2cac1bec77fb4c1d875bfaee487074).
 
 ## What's in the box ##
 

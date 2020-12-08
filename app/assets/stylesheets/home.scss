@@ -5,13 +5,21 @@
 .card-title {
   font-size: 24px;
   text-align: center;
-  background-color: white
+  background-color: white;
 }
 
 .card-text {
   font-size: 16px;
   padding-left: 256;
   background-color: white;
+}
+
+#home-cards {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-width: 2px;
+  border-color: black;
 }
 
 #intro {
