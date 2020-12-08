@@ -1,6 +1,6 @@
 <body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
   
-          <!-- search bar -->
+  <!-- search bar -->
   <div id="search_bar">
     <%= form_tag(search_index_path, method: "get") do %>
     <%= text_field_tag :query %>
@@ -32,7 +32,7 @@
                     <p><%= truncate(resource.description, :length => 200) %><p>
                   </div>
                   <div class="card-footer text-muted">
-                    <a href = "https://www.grinnell.edu/user/sannings" class = "btn btn-primary">Contact Info</a>
+                      <%= link_to "Contact Info", "#{resource.web}", class: "btn btn-primary", :target => "_blank"  %>
                   </div>
                 </div>  
               </div>

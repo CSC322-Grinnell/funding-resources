@@ -42,9 +42,19 @@ $primary: #D81E05;
 }
 
 nav {
-  background-color: darkred !important;
   height: 100px;
   position: fixed;
+}
+
+nav#dark {
+  background-color: darkred !important;
+}
+
+nav#light {
+  background-image: -webkit-linear-gradient(left, black, white);
+  background-image: -moz-linear-gradient(left, black, white);
+  background-image: -o-linear-gradient(left, black, white);
+  background-image: linear-gradient(to right, black, white);
 }
 
 nav ul {
@@ -59,15 +69,28 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
-  font-size: 17px;
+  font-size: 15px;
   padding: 15px 15px;
   border-radius: 3px;
   text-transform: uppercase;
 }
 
-.active {
+nav#dark a {
+  color: white;
+}
+
+nav#light a {
+  color: black;
+}
+
+nav#dark div ul li a.active {
   background: black;
+  color: white;
+}
+
+nav#light div ul li a.active {
+  background: black;
+  color: green;
 }
 
 nav ul li a:hover {
@@ -75,22 +98,38 @@ nav ul li a:hover {
   transition: .5s;
 }
 
-nav label.checkbtn {
-  font-size: 30px;
-  color: white;
-  //float: right;
-  //line-height: 80px;
-  //margin-right: 40px;
+.darkButton {
+  width: 115px;
+  height: 25px;
+  font-size: 15px;
+  background-color: gray;
+  border-radius: 10px;
+  margin: 28px;
+  padding: 1.8px;
 }
 
-h1, h2, h3, li {
-  color: white;
+.lightButton {
+  width: 115px;
+  height: 25px;
+  font-size: 15px;
+  background-color: #660000;
+  border-radius: 10px;
+  margin: 28px;
+  padding: 1.8px;
 }
 
 body {
   background-color: black;
   overflow-x: hidden;
   font-family: "Futura";
+}
+
+body#dark {
+  background-color: black;
+}
+
+body#light {
+  background-color: white;
 }
 
 .container .jumbotron {
@@ -100,7 +139,6 @@ body {
 
 .container .jumbotron a {
   -webkit-text-stroke: 2px black;
-  color: white;
   font-size: 128px;
   text-decoration: none;
 }
@@ -121,7 +159,6 @@ h1-main {
 
 a {
   font-size: 32px;
-  color: white !important;
   text-decoration: none !important;
 }
 
