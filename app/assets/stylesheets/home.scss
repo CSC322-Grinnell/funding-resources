@@ -1,34 +1,8 @@
-.card-body {
-  padding: 25px;
-}
-
-.card-title {
-  font-size: 24px;
-  text-align: center;
-  background-color: white;
-}
-
-.card-text {
-  font-size: 16px;
-  padding-left: 256;
-  background-color: white;
-}
-
-#home-cards {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  border-width: 2px;
-  border-color: black;
-}
-
-#intro {
-    background: url("https://www.cappex.com/sites/default/files/images/hero/college/153384_hero.jpg")no-repeat center center fixed;
-    background-blend-mode: opacity;
+.bg {
+    background: url("https://www.cappex.com/sites/default/files/images/hero/college/153384_hero.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    text-align: center;
-    height: 560px;
+    height: 100%;
 }
