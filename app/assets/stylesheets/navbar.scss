@@ -41,9 +41,14 @@ nav ul li a {
   transition: .5s;
 }
 
+
 #light nav ul li a:hover {
   background: #D81E05;
   transition: .5s;
+}
+
+#dark nav {
+  background: black;
 }
 
 #dark nav ul li a:hover {
