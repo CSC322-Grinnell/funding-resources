@@ -27,7 +27,7 @@
           <div class = "row">
             <% @resources.each do |resource| %>
               <div class = "col-lg-3 col-md-4 col-sm-12 mb-3", align = "center">
-                <div class="card card-custom">
+                <div class="card" style="height: 275px;">
                   <div class="card-body">
                     <h2 style = "color:black"> <%= resource.title %></h2>
                     <p><%= truncate(resource.description, :length => 200) %><p>

@@ -5,11 +5,11 @@ one:
   description: MyText
   amount: MyString
   source: MyString
-  cp: MyString
+  contact_person: MyString
 
 two:
   title: MyString
   description: MyText
   amount: MyString
   source: MyString
-  cp: MyString
+  contact_person: MyString
