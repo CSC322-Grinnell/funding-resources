@@ -31,7 +31,7 @@ ActiveAdmin.register Resource do
       f.input :amount
       f.input :source
       f.input :contact_person
-      f.input :tag_ids, as: :selected_list
+      f.input :tags
       # there is a connection between resources and tags
     end
     f.actions
