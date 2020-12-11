@@ -4,7 +4,7 @@
     <% slice.each do |tag| %>
     <a> 
       <%= check_box_tag(tag.name, tag.name) %>
-      <%= label_tag(tag.name, tag.name, :style => "font-size: 12px;") %>
+      <%= label_tag(tag.name, tag.name, class: "checkbox-text") %>
     </a>
     <% end %>
     <br>
