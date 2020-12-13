@@ -29,11 +29,13 @@
               <div class = "col-lg-3 col-md-4 col-sm-12 mb-3", align = "center">
                 <div class="card" style="height: 275px;">
                   <div class="card-body">
-                    <h2 style = "color:black"> <%= resource.title %></h2>
-                    <p><%= truncate(resource.description, :length => 200) %><p>
+                    <h2><%= link_to resource.title, controller: "resources", action: "show", id: resource, class: "black-link" %></h2>
+                    <% if resource.description %>
+                      <p><%= link_to truncate(resource.description, :length => 200), controller: "resources", action: "show", id: resource, class: "black-link" %><p>
+                    <% end %>
                   </div>
-                  <div class="card-footer text-muted">
-                      <%= link_to "Contact Info", "#{resource.web}", class: "btn btn-primary", :target => "_blank"  %>
+                  <div class="card-footer">
+                    <%= link_to "Contact Info", "#{resource.web}", class: "btn btn-primary", :target => "_blank"  %>
                   </div>
                 </div>  
               </div>

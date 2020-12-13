@@ -59,12 +59,17 @@ h1-main {
 }
 
 a {
-  font-size: 32px;
   text-decoration: none !important;
+}
+
+h2 a {
+  color: black !important;
+}
+
+p a {
+  color: black !important;
 }
 
 .container1 .jumbotron1 {
   background-color: white;
 }
-
-
