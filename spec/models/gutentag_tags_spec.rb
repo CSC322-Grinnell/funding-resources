@@ -16,4 +16,33 @@ RSpec.describe Gutentag::Tag, type: :model do
             expect(tag1['mytag'] == tag2['mytag']).to eq(true)
         end
     end
+    
+    # describe '#taggings_count' do
+    #     it 'returns the number of tags' do
+    #         tag1 = Gutentag::Tag.create(name: 'tag1')
+    #         taggable1 = Resource.create(title: 'src1')
+    #         taggable2 = Resource.create(title: 'src2')
+    #         tagging1 = Gutentag::Tagging.create(tag_id: tag1.id, taggable_id: taggable1.id)
+    #         tagging2 = Gutentag::Tagging.create(tag_id: tag1.id, taggable_id: taggable2.id)
+    #         expect(tag1.taggings_count).to eq(2)
+    #     end
+    # end
+    
+    describe '#taggable_id' do
+        it 'returns the id of the source' do
+            tag = Gutentag::Tag.create(name: 'tag')
+            taggable = Resource.create(title: 'src')
+            tagging = Gutentag::Tagging.create(tag_id: tag.id, taggable_id: taggable.id)
+            expect(tagging.taggable_id).to eq(taggable.id)
+        end
+    end
+    
+    describe '#tag_id' do
+        it 'returns the id of the tag' do
+            tag = Gutentag::Tag.create(name: 'tag')
+            taggable = Resource.create(title: 'src')
+            tagging = Gutentag::Tagging.create(tag_id: tag.id, taggable_id: taggable.id)
+            expect(tagging.tag_id).to eq(tag.id)
+        end
+    end
 end
