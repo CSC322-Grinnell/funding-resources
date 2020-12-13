@@ -19,17 +19,6 @@
   font-size: 30px;
 }
 
-.form-check {
-  padding-left: 40px;
-}
-
-.form-check-label {
-  color: white;
-  font-family: "Futura";
-  stroke: 100;
-  font-size: 16px;
-}
-
 #search_bar {
   text-align: center;
   padding: 20px;
@@ -60,6 +49,8 @@ body {
 
 .checkbox-text {
   font-size: 12px;
+  margin-right: 7px;
+  vertical-align: middle;
 }
 
 #dark .checkbox-text {
@@ -76,4 +67,11 @@ h2 a {
 
 p a {
   color: black !important;
+}
+
+#dark .btn-dark {
+  height: 40px;
+  color: black;
+  background: white;
+  text-shadow:none !important;
 }

@@ -1,14 +1,14 @@
 <%= form_with(url: "/search", method: "get") do %>
   <%= hidden_field_tag :query, params[:query] %>
+  <li>
   <%= @tags.each_slice(3) do |slice| %>
     <% slice.each do |tag| %>
-    <a> 
       <%= check_box_tag(tag.name, tag.name) %>
       <%= label_tag(tag.name, tag.name, class: "checkbox-text") %>
-    </a>
     <% end %>
     <br>
   <% end %>
+  </li>
   <br>
   <button class = "btn btn-dark" type = "submit">Submit</button>
 <% end %>
