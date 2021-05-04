@@ -34,9 +34,9 @@
                       <p><%= link_to truncate(resource.description, :length => 200), controller: "resources", action: "show", id: resource, class: "black-link" %><p>
                     <% end %>
                   </div>
-                  <div class="card-footer">
-                    <%= link_to "Contact Info", "#{resource.web}", class: "btn btn-primary", :target => "_blank"  %>
-                  </div>
+                  <!---<div class="card-footer">
+                    <%= link_to "External Link", "#{resource.web}", class: "btn btn-primary", :target => "_blank"  %>
+                  </div>--->
                 </div>  
               </div>
             <% end %>
