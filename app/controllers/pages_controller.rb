@@ -18,4 +18,7 @@ class PagesController < ApplicationController
   def browse
     @resources = Resource.all
   end 
+  
+  def add_funds
+  end
 end

@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get'/contact', to:'pages#contact', as:'contact'
   get '/browse', to:'search#index', as:'browse'
   get 'resources/new', to:'resources#new', as:'new'
+  get '/add_funds', to:'pages#add_funds', as:'add_funds'
 end

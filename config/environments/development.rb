@@ -70,4 +70,7 @@ module ActiveAdmin
     end
   end
 end
+
+# Allow connections to local server.
+config.hosts.clear
 end
