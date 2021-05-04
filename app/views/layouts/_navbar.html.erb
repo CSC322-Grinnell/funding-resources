@@ -21,6 +21,9 @@
   <div class="collapse navbar-collapse sticky-top" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item" role = "button">
+        <%= link_to "Add Funds", add_funds_path, class: "#{"active" if (current_page? add_funds_path)}"%>
+      </li>
+      <li class="nav-item" role = "button">
         <%= link_to "Browse", browse_path, class: "#{"active" if (current_page? browse_path)}"%>
       </li>
       <li class="nav-item" role = "button">
