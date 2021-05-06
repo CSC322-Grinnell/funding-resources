@@ -1,0 +1,33 @@
+<!--<%= simple_form_for @resource do |f|%>-->
+<!--  <h3><%= f.input :title, label: "Resource Title" %></h3>-->
+<!--  <h3><%= f.input :description, label: "Description"%></h3>-->
+<!--  <h3><%= f.input :source, label: "Source" %></h3>-->
+<!--  <h3><%= f.input :contact_person, label: "Contact Person"%></h3>-->
+<!--  <h3><%= f.input :amount, label: "Amount" %></h3>-->
+<!--  <h3><%= f.input :web, label: "Website Link" %></h3>-->
+<!--  <%= f.button :submit %>-->
+<!--<% end %>-->
+
+
+<% provide(:title, 'Add Fund') %>
+<h1>Add Funds</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with(model: @resource, local: true) do |f| %>
+      <%= render 'devise/shared/error_messages' %>
+    
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+      
+      <%= f.label :contact_person %>
+      <%= f.text_field :contact_person, class: 'form-control' %>
+      
+      <!--<%= f.label :email %>-->
+      <!--<%= f.text_field :email, class: 'form-control' %>-->
+      
+      
+      <%= f.submit "Submit Resource", class: "btn btn- primary" %>
+    <% end %>
+  </div>
+</div>

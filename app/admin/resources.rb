@@ -21,7 +21,7 @@ ActiveAdmin.register Resource do
   # https://activeadmin.info/2-resource-customization.html
   
   
-  permit_params :title, :description, :amount, :source, :cp, tag_ids: []
+  permit_params :title, :description, :amount, :source, :contact_person, :web, :approved, tag_ids: []
   
   
   form do |f|
@@ -31,7 +31,9 @@ ActiveAdmin.register Resource do
       f.input :amount
       f.input :source
       f.input :contact_person
+      f.input :web
       f.input :tags
+      f.input :approved
       # there is a connection between resources and tags
     end
     f.actions

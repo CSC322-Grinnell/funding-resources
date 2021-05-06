@@ -3,7 +3,7 @@
     <h1 class="result-text"><%= @resource.title %></h1>
     
     <% if @resource.amount %>
-    <h3 class="result-text">Amount: $<%= @resource.amount %></h3>
+        <h3 class="result-text">Amount: $<%= @resource.amount %></h3>
     <% end %>
     
     <% if @resource.source %>
@@ -11,12 +11,13 @@
     <% end %>
     
     <% if @resource.contact_person %>
-    <h3 class="result-text">Contact Person: <%= @resource.contact_person %></h3>
+        <h3 class="result-text">Contact Person: <%= @resource.contact_person %></h3>
     <% end %>
     
     <% if @resource.description %>
-    <h3 class="result-text">Description: <%= @resource.description %></h3>
+        <h3 class="result-text">Description: <%= @resource.description %></h3>
     <% end %>
     
-    <%= link_to "Contact Info", "#{@resource.web}", class: "btn btn-primary", :target => "_blank"  %>
+    
+    <%= link_to "Fund Website >", "#{@resource.web}", class: "btn btn-primary", :target => "_blank"  %>
 </div>

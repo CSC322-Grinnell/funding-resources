@@ -1,4 +1,9 @@
 class Resource < ApplicationRecord
+  
+  # Validates Resources Parameters
+  validates :title, presence: true
+  validates :contact_person, presence: true
+  
   #Including pg_search capabilities to this model
   include PgSearch::Model
   

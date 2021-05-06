@@ -35,7 +35,9 @@
                     <% end %>
                   </div>
                   <div class="card-footer">
-                    <%= link_to "Contact Info", "#{resource.web}", class: "btn btn-primary", :target => "_blank"  %>
+                    <% if resource.web %>
+                      <%= link_to "Fund Website >", "#{resource.web}", class: "btn btn-primary", :target => "_blank"  %>
+                    <% end %>
                   </div>
                 </div>  
               </div>
